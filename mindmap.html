@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Super Soldiers</title>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+      <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+
+       <!--  <style type="text/css">
+           .js-scroll {
+                position: fixed;
+                z-index: 10;
+                top: 110px;
+                left: 0;
+                overflow: hidden;
+                width: 100%;
+                will-change: transform;
+            }
+            @media (max-width: 991px) {
+                .js-scroll {
+                    position: fixed;
+                    z-index: 10;
+                    top: 150px;
+                    left: 0;
+                    overflow: hidden;
+                    width: 100%;
+                    will-change: transform;
+                }
+            }
+        </style> -->
+    </head>
+    <body id="changeTheme" class="army">
+        <div id="butter">
+
+
+
+
+
+      <header class="desktop-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-4">
+                        <div class="logo">
+                            <a href="index.html"><img src="images/logo-web.png" /></a>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-8">
+                         <div class="nav-menus">
+                                <nav class="navbar navbar-expand-lg">
+                                    <div class="container-fluid">
+                                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                                            <span class="navbar-toggler-icon"></span>
+                                        </button>
+                                        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="mindmap.html">Mindmap</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="voting_system.html">Voting</a>
+                                                </li>
+                                          
+                                                <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            More
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">PFP Tool</a></li>
+            <li><a class="dropdown-item" href="#">Merchandise</a></li>
+            <li><a class="dropdown-item" href="#">Gallery</a></li>
+          </ul>
+        </li>
+
+        <li><ul class="social-icons">
+                                <li>
+                                    <a href="https://twitter.com/SuperSoldiers3D" target="blank"><i class="fa-brands fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/supersoldiers3d" target="blank"><i class="fa-brands fa-instagram"></i></a>
+                                </li>
+                                <li class="disabled">
+                                    <a href=""><i class="fa-brands fa-discord"></i></a>
+                                </li>
+                            </ul></li>
+
+                                <li class="nav-item edwa">
+                                                    <a class="nav-link y-colr" href="">Connect Wallet</a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+
+
+
+
+
+
+
+
+
+
+
+        <header class="mobile">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-12">
+                        <div class="logo">
+                            <a href="index.html"><img src="images/logo-web.png" /></a>
+                        </div>
+                    </div>
+                    <!-- <div class="col-md-6 col-9">
+                        <div class="logo-title">
+                            <img src="images/title.png" />
+                        </div>
+                    </div> -->
+                    <div class="col-md-8 col-12">
+                        <div class="right-block">
+                            <ul class="social-icons">
+                                <li>
+                                    <a href="https://twitter.com/SuperSoldiers3D" target="blank"><i class="fa-brands fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/supersoldiers3d" target="blank"><i class="fa-brands fa-instagram"></i></a>
+                                </li>
+                                <li class="disabled">
+                                    <a href=""><i class="fa-brands fa-discord"></i></a>
+                                </li>
+                            </ul>
+
+                            <div class="colortheme">
+                                <div class="color-swatch"><i class="fa-solid fa-palette"></i></div>
+                                <ul>
+                                    <li><button onclick="army()">Army</button></li>
+                                    <li><button onclick="navy()">Navy</button></li>
+                                    <li><button onclick="airforce()">Airforce</button></li>
+                                    <li><button onclick="cartoon()">Cartoon</button></li>
+                                </ul>
+                            </div>
+
+                            <div class="menus-sc">
+                                <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" />
+                                <label for="openSidebarMenu" class="sidebarIconToggle">
+                                    <div class="spinner diagonal part-1"></div>
+                                    <div class="spinner horizontal"></div>
+                                    <div class="spinner diagonal part-2"></div>
+                                </label>
+                                <div id="sidebarMenu">
+                                    <ul class="sidebarMenuInner">
+                                        <li class="active"><a href="index.html" class="active">Home</a></li>
+                                        <li><a href="mindmap.html">Mindmap</a></li>
+                                        <li><a href="voting_system.html">Voting system</a></li>
+                                        <li><a href="" class="grh">Pfp Tool</a></li>
+                                        <li><a href="" class="grh">Merchandise</a></li>
+                                        <li><a href="" class="grh">Gallery</a></li>
+  <li><a href="" class="grh">Charity</a></li>
+  <li><a href="" class="grh wall">Connect Wallet</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="js-scroll">
+            <section class="mindmap-sc">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="des-text">
+                                <h2>MINDMAP</h2>
+                                <div class="ptext">
+                                    <p>
+Together we are building a community, an army. We are bringing innovation to the Web3 space, aiding its journey towards decentralization and a step closer to a fairer world.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="article">
+                            <article class="article__panel article__panel_one" id="article-one">
+                                <div class="article__body">
+                                    <div class="article__container">
+                                        <a role="button" href="#0" class="back-link"><img src="images/s.svg" /></a>
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="des-text2">
+                                                        <h2>Super Soldiers 3D Collection Mint</h2>
+                                                        <p>
+                                                            The Super Soldiers 3D collection will be produced and made available for the community to mint on the Solana Blockchain. Minting details will be announced on all our platforms. It will be made very clear when we mint, do not mint through any links besides our official links in discord, socials and linktree. Stay safe.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="des-text2">
+                                                        <h2>Second Collection Mint</h2>
+                                                        <p>The Super Soldiers Team will be producing our second collection which will be announced and made available for the community to mint down the road. </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <a role="button" class="article__pointer article__pointer_one wow fadeInUp animated" data-wow-delay="0.1s" href="#article-one">
+                                <span class="article__layer article__layer_one" role="presentation"></span>
+                                <div class="block-road">
+                                    <h2>01</h2>
+                                    <h4>
+                                        Super<br />
+                                        Soldiers 3D <i class="fa-solid fa-arrow-right-long"></i>
+                                    </h4>
+                                    <img src="images/logo.png" />
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="article">
+                            <article class="article__panel article__panel_two" id="article-two">
+                                <div class="article__body">
+                                    <div class="article__container">
+                                        <a role="button" href="#0" class="back-link"><img src="images/s.svg" /></a>
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="des-text2">
+                                                        <h2>Super Crates Deployment</h2>
+                                                        <p>
+                                                            The Super Soldiers Team will be releasing mysterious Super Crates containing a random item. Inside you will find brand new weapons and gun skins. Holders will be distributed a free Super Crate each post mint.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="des-text2">
+                                                        <h2>Super Soldier Weapon Customisation</h2>
+                                                        <p>
+                                                            The contents of Super Crates will be applicable to be combined with each existing Super Soldier NFT. This means we will be implementing a function on our website to allow holders to swap out their original weapon with a brand new one they unboxed from a Super Crate. This will be deployed post mint. 
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <a role="button" class="article__pointer article__pointer_two wow fadeInUp animated" data-wow-delay="0.2s" href="#article-two">
+                                <span class="article__layer article__layer_two" role="presentation"></span>
+                                <div class="block-road">
+                                    <h2>02</h2>
+                                    <h4>Super Crates <i class="fa-solid fa-arrow-right-long"></i></h4>
+                                    <img src="images/logo.png" />
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="article">
+                            <article class="article__panel article__panel_three" id="article-three">
+                                <div class="article__body">
+                                    <div class="article__container">
+                                        <a role="button" href="#0" class="back-link"><img src="images/s.svg" /></a>
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="des-text2">
+                                                        <h2>Treasury</h2>
+                                                        <p>
+                                                            A small portion of Super Soldiers 3D NFT collection will be airdropped to the team wallet. This will act as the project treasury and will be used in future development of the project. NFTs in the treasury will be used to collaborate with other projects to develop and expand our brand. Not to mention we will be giving back to the community too, expect plenty of giveaways. 200 (2%) units will be held by the team with 100 dedicated to the community treasury and 100 for staff.
+
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="des-text2">
+                                                        <h2>Royalties</h2>
+                                                        <p>
+                                                           Throughout the secondary market transaction royalties will be set to 5%. This means every sale that occurs 5% of the sale will be distributed to the Super Soldiers treasury. Treasury funds will continuously be reinvested into further development and maintenance of the project. 
+
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <a role="button" class="article__pointer article__pointer_three wow fadeInUp animated" data-wow-delay="0.3s" href="#article-three">
+                                <span class="article__layer article__layer_three" role="presentation"></span>
+                                <div class="block-road">
+                                    <h2>03</h2>
+                                    <h4>Fund <i class="fa-solid fa-arrow-right-long"></i></h4>
+                                    <img src="images/logo.png" />
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="article">
+                            <article class="article__panel article__panel_four" id="article-four">
+                                <div class="article__body">
+                                    <div class="article__container">
+                                        <a role="button" href="#0" class="back-link"><img src="images/s.svg" /></a>
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="des-text2">
+                                                        <h2>Apparel</h2>
+                                                        <p>
+                                                            The Super Soldiers Team will design and source Super Soldiers apparel for the community to order. We will be discussing what designs our community likes and supply apparel accordingly to demand from our members.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="des-text2">
+                                                        <h2>Meet Ups</h2>
+                                                        <p>
+                                                           Who else do we want to see more than the people that makes everything possible - the Super Soldiers community! We plan to have IRL meetups and charity events with our team and community. A few lucky troops may be flown out to come see us too. 
+
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <a role="button" class="article__pointer article__pointer_four wow fadeInUp animated" data-wow-delay="0.4s" href="#article-four">
+                                <span class="article__layer article__layer_four" role="presentation"></span>
+                                <div class="block-road">
+                                    <h2>04</h2>
+                                    <h4>The Physical World <i class="fa-solid fa-arrow-right-long"></i></h4>
+                                    <img src="images/logo.png" />
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="article">
+                            <article class="article__panel article__panel_five" id="article-five">
+                                <div class="article__body">
+                                    <div class="article__container">
+                                        <a role="button" href="#0" class="back-link"><img src="images/s.svg" /></a>
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="des-text2">
+                                                        <h2>PFP Tool</h2>
+                                                        <p>
+                                                            Post reveal of our Super Soldiers 3D NFTs we will implement a profile picture tool on our website. This will allow for holders to download high quality images of their Super Soldier 3D NFT and portrait format images too. 
+
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="des-text2">
+                                                        <h2>Gallery</h2>
+                                                        <p>
+                                                           A gallery will be implemented on our website post reveal of the Super Soldiers 3D NFTs. In the gallery you will be able to view all the soldiers, their traits and rarity. Our project will also get listed on rarity sites. 
+
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="des-text2">
+                                                        <h2>Fan Art</h2>
+                                                        <p>
+                                                           We love seeing the community’s produce their own artworks based on our project. All pieces big or small are greatly appreciated by our team. Expect fan art competitions in the future with prizes to be won. 
+
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <a role="button" class="article__pointer article__pointer_five wow fadeInUp animated" data-wow-delay="0.5s" href="#article-five">
+                                <span class="article__layer article__layer_five" role="presentation"></span>
+                                <div class="block-road">
+                                    <h2>05</h2>
+                                    <h4>Artwork <i class="fa-solid fa-arrow-right-long"></i></h4>
+                                    <img src="images/logo.png" />
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="article">
+                            <article class="article__panel article__panel_six" id="article-six">
+                                <div class="article__body">
+                                    <div class="article__container">
+                                        <a role="button" href="#0" class="back-link"><img src="images/s.svg" /></a>
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="des-text2">
+                                                        <h2>Community Establishment</h2>
+                                                        <p>
+                                                            This is the phase where we bring together our community. Through marketing we aim to create a community and a following behind our project to share our stories and develop connections amongst one another.
+
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="des-text2">
+                                                        <h2>Community Driven Development
+</h2>
+                                                        <p>
+                                                            We are a project that listens to its community. The holders and members of the Super Soldiers community will be able to give input and take part in the project's direction and development.
+
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="des-text2">
+                                                        <h2>Partnerships</h2>
+                                                        <p>
+                                                           We aim to partner with fellow Web 3 brands and projects to establish strong connections in the space, continue to grow our community and increase value in our own brand. This will also provide utility to long term holders, expect giveaways and access to new products in future.
+
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <a role="button" class="article__pointer article__pointer_six wow fadeInUp animated" data-wow-delay="0.6s" href="#article-six">
+                                <span class="article__layer article__layer_six" role="presentation"></span>
+                                <div class="block-road">
+                                    <h2>06</h2>
+                                    <h4>Community <i class="fa-solid fa-arrow-right-long"></i></h4>
+                                    <img src="images/logo.png" />
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="article">
+                            <article class="article__panel article__panel_seven" id="article-seven">
+                                <div class="article__body">
+                                    <div class="article__container">
+                                        <a role="button" href="#0" class="back-link"><img src="images/s.svg" /></a>
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="des-text2">
+                                                        <h2>Team Expansion</h2>
+                                                        <p>
+                                                            We will be picking up new talent along the way as we establish a community and further develop the project as a whole. This includes moderation on our discord, social media management, marketing, technical developments, brand deals and more.
+
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="des-text2">
+                                                        <h2>The Road Ahead</h2>
+                                                        <p>
+                                                           All good things take time. We are in for the long haul - so what’s the rush? We will be continuously working hard to develop and deliver, but just remember good things don’t happen overnight. Together with the Super Soldiers Team and our community we can make it happen.
+
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <a role="button" class="article__pointer article__pointer_seven wow fadeInUp animated" data-wow-delay="0.7s" href="#article-seven">
+                                <span class="article__layer article__layer_seven" role="presentation"></span>
+                                <div class="block-road">
+                                    <h2>07</h2>
+                                    <h4>Project Development <i class="fa-solid fa-arrow-right-long"></i></h4>
+                                    <img src="images/logo.png" />
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="article">
+                            <article class="article__panel article__panel_eight" id="article-eight">
+                                <div class="article__body">
+                                    <div class="article__container">
+                                        <a role="button" href="#0" class="back-link"><img src="images/s.svg" /></a>
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="des-text2">
+                                                        <h2>Safety</h2>
+                                                        <p>
+                                                            Currently there is no released information about the Super Soldiers 3D mint. Announcements will be made very clearly on our social media platforms, discord and website before the minting occurs. We are not responsible if you click a foreign link and have funds stolen. Only use official links on our website, discord and social media. Please be utmost careful and stay safe. 
+
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="des-text2">
+                                                        <h2>Collection</h2>
+                                                        <p>
+                                                            The project is launching the Super Soldiers 3D NFT collection on the Solana Blockchain. There will be a supply of 10,000 NFTs to be minted. Our high quality soldiers have been professionally developed by our graphic designer to complete a collection with over 220 unique traits and variations. In the collection there will be ten Elite Soldiers to be minted. They are one of ones, and are extremely rare with individually unique traits.
+
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="des-text2">
+                                                        <h2>Sales</h2>
+                                                        <p>
+                                                            During the mint there will be a public sale and whitelist sale. Being on the whitelist grants you access to the exclusive whitelist sale in which you will be granted a discounted mint. Pricing TBA with minting information.
+                                                        </p>
+                                                        <p>We are a project that doesn't believe in extensive hours of work just to join a whitelist hence we have made it achievable for everyone to join the whitelist. Details on whitelist requirements will be made available on our Discord. Whitelist spots will also be regularly given away on our social media platforms. So be sure to stay active there.
+</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <a role="button" class="article__pointer article__pointer_eight wow fadeInUp animated" data-wow-delay="0.8s" href="#article-eight">
+                                <span class="article__layer article__layer_eight" role="presentation"></span>
+                                <div class="block-road">
+                                    <h2>08</h2>
+                                    <h4>Minting <i class="fa-solid fa-arrow-right-long"></i></h4>
+                                    <img src="images/logo.png" />
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 
+<footer class="footer-sc bg-drk mid">
+    <div class="container">
+  <div class="row">
+  <div class="col-md-12">
+  <div class="des-text2">
+<h2>JOIN THE<br> COMMUNITY</h2>
+<div class="ptextt">
+<p>We can't reply to all emails but all good vibes are appreciated!</p>
+<p>You can email us at <span class="bold"> hello@supersoldiers3d..com</span></p>
+</div>
+<ul class="footer-social">
+  <li><a href=""><i class="fa-brands fa-discord"></i> Discord</a></li>
+  <li><a href=""><i class="fa-brands fa-twitter-square"></i> Twitter</a></li>
+  <li><a href=""><i class="fa-brands fa-linkedin"></i> Instagram</a></li>
+  <li><a href=""><i class="fa-brands fa-behance-square"></i> Behance</a></li>
+  <li><a href=""><i class="fa-brands fa-youtube"></i> Youtube</a></li>
+
+</ul>
+
+
+ 
+</div>
+</div>
+
+</div>
+</div>
+</footer>
+ -->
+                <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="footer-logo">
+                                <img src="images/title.png" />
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <ul class="copyrights">
+                                <li><a href="" class="">Terms &amp; Conditions</a></li>
+                              
+                                <li><p>© 2022 SuperSoldiers3D</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blank-section"></div>
+        </main>
+
+        <script src="js/jquery.js"></script>
+
+        <script src="js/bootstrap.min.js"></script>
+     <script src="js/wow.js"></script>
+     <script>
+         wow = new WOW({
+             animateClass: 'animated',
+             offset: 100,
+             callback: function(box) {
+                 console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+             }
+         });
+         wow.init();
+      </script>
+<!-- 
+        <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script> -->
+    <!--     <script type="text/javascript" src="js/common.js"></script> -->
+    <!--      <script type="text/javascript">
+            const body = document.body,
+                jsScroll = document.getElementsByClassName("js-scroll")[0],
+                height = jsScroll.getBoundingClientRect().height - 1,
+                speed = 0.05;
+
+            var offset = 0;
+
+            body.style.height = Math.floor(height) + "px";
+
+            function smoothScroll() {
+                offset += (window.pageYOffset - offset) * speed;
+
+                var scroll = "translateY(-" + offset + "px) translateZ(0)";
+                jsScroll.style.transform = scroll;
+
+                raf = requestAnimationFrame(smoothScroll);
+            }
+            smoothScroll();
+        </script>  -->
+           <script>
+       $(window).scroll(function(){
+      if ($(this).scrollTop() > 120) {
+          $('.desktop-header').addClass('sticky');
+      } else {
+          $('.desktop-header').removeClass('sticky');
+      }
+});
+        </script>
+         <script>
+       $(window).scroll(function(){
+      if ($(this).scrollTop() > 120) {
+          $('.mobile').addClass('sticky');
+      } else {
+          $('.mobile').removeClass('sticky');
+      }
+});
+        </script>
+   </div> </body>
+</html>

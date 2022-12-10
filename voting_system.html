@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Super Soldiers</title>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+      <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+
+       <!--  <style type="text/css">
+           .js-scroll {
+                position: fixed;
+                z-index: 10;
+                top: 110px;
+                left: 0;
+                overflow: hidden;
+                width: 100%;
+                will-change: transform;
+            }
+            @media (max-width: 991px) {
+                .js-scroll {
+                    position: fixed;
+                    z-index: 10;
+                    top: 150px;
+                    left: 0;
+                    overflow: hidden;
+                    width: 100%;
+                    will-change: transform;
+                }
+            }
+        </style> -->
+    </head>
+    <body id="changeTheme" class="army">
+        <div id="butter">
+
+
+
+
+
+      <header class="desktop-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-4">
+                        <div class="logo">
+                            <a href="index.html"><img src="images/logo-web.png" /></a>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-8">
+                         <div class="nav-menus">
+                                <nav class="navbar navbar-expand-lg">
+                                    <div class="container-fluid">
+                                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                                            <span class="navbar-toggler-icon"></span>
+                                        </button>
+                                        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="mindmap.html">Mindmap</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="voting_system.html">Voting</a>
+                                                </li>
+                                          
+                                                <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            More
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">PFP Tool</a></li>
+            <li><a class="dropdown-item" href="#">Merchandise</a></li>
+            <li><a class="dropdown-item" href="#">Gallery</a></li>
+          </ul>
+        </li>
+
+        <li><ul class="social-icons">
+                                <li>
+                                    <a href="https://twitter.com/SuperSoldiers3D" target="blank"><i class="fa-brands fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/supersoldiers3d" target="blank"><i class="fa-brands fa-instagram"></i></a>
+                                </li>
+                                <li class="disabled">
+                                    <a href=""><i class="fa-brands fa-discord"></i></a>
+                                </li>
+                            </ul></li>
+
+                                <li class="nav-item edwa">
+                                                    <a class="nav-link y-colr" href="">Connect Wallet</a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        <header class="mobile">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-12">
+                        <div class="logo">
+                            <a href="index.html"><img src="images/logo-web.png" /></a>
+                        </div>
+                    </div>
+                    <!-- <div class="col-md-6 col-9">
+                        <div class="logo-title">
+                            <img src="images/title.png" />
+                        </div>
+                    </div> -->
+                    <div class="col-md-8 col-12">
+                        <div class="right-block">
+                            <ul class="social-icons">
+                                <li>
+                                    <a href="https://twitter.com/SuperSoldiers3D" target="blank"><i class="fa-brands fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/supersoldiers3d" target="blank"><i class="fa-brands fa-instagram"></i></a>
+                                </li>
+                                <li class="disabled">
+                                    <a href=""><i class="fa-brands fa-discord"></i></a>
+                                </li>
+                            </ul>
+
+                            <div class="colortheme">
+                                <div class="color-swatch"><i class="fa-solid fa-palette"></i></div>
+                                <ul>
+                                    <li><button onclick="army()">Army</button></li>
+                                    <li><button onclick="navy()">Navy</button></li>
+                                    <li><button onclick="airforce()">Airforce</button></li>
+                                    <li><button onclick="cartoon()">Cartoon</button></li>
+                                </ul>
+                            </div>
+
+                            <div class="menus-sc">
+                                <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" />
+                                <label for="openSidebarMenu" class="sidebarIconToggle">
+                                    <div class="spinner diagonal part-1"></div>
+                                    <div class="spinner horizontal"></div>
+                                    <div class="spinner diagonal part-2"></div>
+                                </label>
+                                <div id="sidebarMenu">
+                                    <ul class="sidebarMenuInner">
+                                        <li class="active"><a href="index.html" class="active">Home</a></li>
+                                        <li><a href="mindmap.html">Mindmap</a></li>
+                                        <li><a href="voting_system.html">Voting system</a></li>
+                                        <li><a href="" class="grh">Pfp Tool</a></li>
+                                        <li><a href="" class="grh">Merchandise</a></li>
+                                        <li><a href="" class="grh">Gallery</a></li>
+  <li><a href="" class="grh">Charity</a></li>
+  <li><a href="" class="grh wall">Connect Wallet</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="js-scroll">
+            <section class="description-sc bg-blu voting-sc-one">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 offset-md-1">
+                            <div class="des-text">
+                                <h2 class="wow fadeInUp animated" data-wow-delay="0.1s">
+                                    How our project will bring<br> value to the space
+                                </h2>
+                                <div class="ptext wow fadeInUp animated" data-wow-delay="0.2s">
+                                    <p>
+                                        The Super Soldiers 3D collection is a PFP NFT with new, unique and high quality artwork but that's not all. We are here to be a project to deliver innovation to the Web3 space. One of the main
+                                        concerns that cryptocurrency and blockchain aims to tackle is centralisation of power and control. The future is now and we are here to improve decentralization across the globe.
+                                    </p>
+                                    <p>
+                                        Our ambition is to develop an open source blockchain voting system utilizing tokens. This is in aspiration to make the world a fairer place by moving power away from the wealthy and powerful and
+                                        spreading it across the larger population. This technology will make it possible to take any sort of poll, voting, data collection, elections and more without any sort of <b>manipulation</b> or
+                                        <b>corruption</b>.
+                                    </p>
+
+                                    <p>
+                                        By owning one of our Super Soldier 3D NFTs it means you are investing and taking part in a community that is here to bring about change, innovation and the development of this technology. The members
+                                        of our community will be the very first to be able to test our voting system as we develop it into its final stages and officially release it to the public. Members will be able to have a say and vote
+                                        in how our project develops in the long term.
+                                    </p>
+                                </div>
+                             
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mindmap-sc new-sw">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="des-text">
+                                <h2>Applications</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="article">
+                            <article class="article__panel article__panel_one" id="article-one">
+                                <div class="article__body">
+                                    <div class="article__container">
+                                        <a role="button" href="#0" class="back-link"><img src="images/s.svg" /></a>
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="des-text2">
+                                                        <h2>DAO</h2>
+                                                        <p>
+                                                          As the space develops, most projects, especially NFT projects aim to become a DAO (Decentralized Autonomous Organization) where the control, power and direction the project develops is in the hands of the members of the community rather than giving complete control to founders/leaders. This application is perfect for this voting system as it will allow the project team to collect accurate, unmanipulated data that is also transparent to the people ensuring the project truly is decentralized. 
+
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <a role="button" class="article__pointer article__pointer_one wow fadeInUp animated" data-wow-delay="0.1s" href="#article-one">
+                                <span class="article__layer article__layer_one" role="presentation"></span>
+                                <div class="block-road">
+                                    <h2>01</h2>
+                                    <h4>
+                                       DAO
+<i class="fa-solid fa-arrow-right-long"></i>
+                                    </h4>
+                                    <img src="images/logo.png" />
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="article">
+                            <article class="article__panel article__panel_two" id="article-two">
+                                <div class="article__body">
+                                    <div class="article__container">
+                                        <a role="button" href="#0" class="back-link"><img src="images/s.svg" /></a>
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="des-text2">
+                                                        <h2>Elections
+</h2>
+                                                        <p>
+                                                           Government elections in many countries are corrupt where votes are completely manipulated, which many people are aware of but have no choice but to comply. Having an open source system that can not be faked or manipulated by the powerful will make the unfair world we live in a more fair place.
+
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <a role="button" class="article__pointer article__pointer_two wow fadeInUp animated" data-wow-delay="0.2s" href="#article-two">
+                                <span class="article__layer article__layer_two" role="presentation"></span>
+                                <div class="block-road">
+                                    <h2>02</h2>
+                                    <h4>Elections<i class="fa-solid fa-arrow-right-long"></i></h4>
+                                    <img src="images/logo.png" />
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="article">
+                            <article class="article__panel article__panel_three" id="article-three">
+                                <div class="article__body">
+                                    <div class="article__container">
+                                        <a role="button" href="#0" class="back-link"><img src="images/s.svg" /></a>
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="des-text2">
+                                                        <h2>Shareholders</h2>
+                                                        <p>
+                                                            Shareholders of record in a company are able to vote on certain corporate actions, elect members to the board of directors, approve issuing new securities or payment of dividends, stock splits etc. Utilising an opensource voting system would allow all investors big or small to have a say in a fair vote without the risk of centralised decision making.
+
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <a role="button" class="article__pointer article__pointer_three wow fadeInUp animated" data-wow-delay="0.3s" href="#article-three">
+                                <span class="article__layer article__layer_three" role="presentation"></span>
+                                <div class="block-road">
+                                    <h2>03</h2>
+                                    <h4>Shareholders <i class="fa-solid fa-arrow-right-long"></i></h4>
+                                    <img src="images/logo.png" />
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="article">
+                            <article class="article__panel article__panel_four" id="article-four">
+                                <div class="article__body">
+                                    <div class="article__container">
+                                        <a role="button" href="#0" class="back-link"><img src="images/s.svg" /></a>
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="des-text2">
+                                                        <h2>Polls</h2>
+                                                        <p>
+                                                            Polls taken on social media such as twitter (and any other medium) can be manipulated easily with the use of bots and manipulation of accounts. Data taken on twitter polls can most definitely be inaccurate, manipulated and exploited by the powerful. Our voting system will ensure poll data will be accurate and transparent.
+
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <a role="button" class="article__pointer article__pointer_four wow fadeInUp animated" data-wow-delay="0.4s" href="#article-four">
+                                <span class="article__layer article__layer_four" role="presentation"></span>
+                                <div class="block-road">
+                                    <h2>04</h2>
+                                    <h4>Polls <i class="fa-solid fa-arrow-right-long"></i></h4>
+                                    <img src="images/logo.png" />
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="article">
+                            <article class="article__panel article__panel_five" id="article-five">
+                                <div class="article__body">
+                                    <div class="article__container">
+                                        <a role="button" href="#0" class="back-link"><img src="images/s.svg" /></a>
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="des-text2">
+                                                        <h2>Costs</h2>
+                                                        <p>
+                                                           Physical voting, elections and polls are not only susceptible to corruption but they require physical labour, time and money. Having an efficient digital voting system on the blockchain will make voting processes faster, affordable and more convenient. 
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <a role="button" class="article__pointer article__pointer_five wow fadeInUp animated" data-wow-delay="0.5s" href="#article-five">
+                                <span class="article__layer article__layer_five" role="presentation"></span>
+                                <div class="block-road">
+                                    <h2>05</h2>
+                                    <h4>Cost <i class="fa-solid fa-arrow-right-long"></i></h4>
+                                    <img src="images/logo.png" />
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="article">
+                            <article class="article__panel article__panel_six" id="article-six">
+                                <div class="article__body">
+                                    <div class="article__container">
+                                        <a role="button" href="#0" class="back-link"><img src="images/s.svg" /></a>
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="des-text2">
+                                                        <h2>Survey</h2>
+                                                        <p>
+                                                           
+Surveys where data is collected from individuals can often be manipulated to favour a certain believe, opinion or statistic. Having an opensource system on the blockchain will ensure there aren't forged or reproduced data that would deter accuracy. This would ensure the data is an accurate depiction of the truth and what individuals favour.
+
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <a role="button" class="article__pointer article__pointer_six wow fadeInUp animated" data-wow-delay="0.6s" href="#article-six">
+                                <span class="article__layer article__layer_six" role="presentation"></span>
+                                <div class="block-road">
+                                    <h2>06</h2>
+                                    <h4>Survey <i class="fa-solid fa-arrow-right-long"></i></h4>
+                                    <img src="images/logo.png" />
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+ <section class="description-sc bg-blu voting-sc-one rfe">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 offset-md-1">
+                            <div class="des-text">
+                                <h2 class="wow fadeInUp animated" data-wow-delay="0.1s">
+                                    Case Study
+                                </h2>
+                                <div class="ptext wow fadeInUp animated" data-wow-delay="0.2s">
+                                    <p>
+                                       Terra Luna & Luna 2.0 Hard Fork
+                                    </p>
+                                    <p>
+                                       In early May 2022 cryptocurrency Terra LUNA, founded by TerraForm Labs directed by Do Kwon collapsed. This was a catastrophic event for the crypto space and contributed to the market crashing significantly. With the coin in turmoil director Do Kwon decided to carry out a poll for LUNA holders/investors to determine the future of the project.
+Following many allegations against Do Kwon, most believe this poll was rigged. Many individuals in the crypto community surrounding the downfall of LUNA stated there were already more than <a href="https://twitter.com/bachain84/status/1527034132223565825?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1527036025972875268%7Ctwgr%5E%7Ctwcon%5Es2_&ref_url=https%3A%2F%2Fthecryptobasic.com%2F2022%2F05%2F19%2Fterra-investors-alleged-ongoing-voting-exercise-to-rebirth-luna-network-is-being-rigged-by-do-kwon%2F"> 10 million 'YES' votes</a> only moments after the poll was opened. Chances are, this most likely was rigged. 
+
+                                    </p>
+
+                                    <p>
+                                       With a new open source blockchain voting system this will remove the worry of having the votes manipulated by an individual such as Do Kwon. Everyone will be able to see the tokens and transactions clearly ensuring that the vote will not be rigged. If this system was in place, at the least all the people that fell victim would have an actual say in what happens next with the project they invested in.
+
+                                    </p>
+                                </div>
+                             
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+          <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="footer-logo">
+                                <img src="images/title.png" />
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <ul class="copyrights">
+                                <li><a href="" class="">Terms &amp; Conditions</a></li>
+                              
+                                <li><p>© 2022 SuperSoldiers3D</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blank-section"></div>
+        </main>
+
+        <script src="js/jquery.js"></script>
+
+        <script src="js/bootstrap.min.js"></script>
+     <script src="js/wow.js"></script>
+     <script>
+         wow = new WOW({
+             animateClass: 'animated',
+             offset: 100,
+             callback: function(box) {
+                 console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+             }
+         });
+         wow.init();
+      </script>
+<!-- 
+        <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script> -->
+    <!--     <script type="text/javascript" src="js/common.js"></script> -->
+    <!--      <script type="text/javascript">
+            const body = document.body,
+                jsScroll = document.getElementsByClassName("js-scroll")[0],
+                height = jsScroll.getBoundingClientRect().height - 1,
+                speed = 0.05;
+
+            var offset = 0;
+
+            body.style.height = Math.floor(height) + "px";
+
+            function smoothScroll() {
+                offset += (window.pageYOffset - offset) * speed;
+
+                var scroll = "translateY(-" + offset + "px) translateZ(0)";
+                jsScroll.style.transform = scroll;
+
+                raf = requestAnimationFrame(smoothScroll);
+            }
+            smoothScroll();
+        </script>  -->
+                  <script>
+       $(window).scroll(function(){
+      if ($(this).scrollTop() > 120) {
+          $('.desktop-header').addClass('sticky');
+      } else {
+          $('.desktop-header').removeClass('sticky');
+      }
+});
+        </script>
+ <script>
+       $(window).scroll(function(){
+      if ($(this).scrollTop() > 120) {
+          $('.mobile').addClass('sticky');
+      } else {
+          $('.mobile').removeClass('sticky');
+      }
+});
+        </script>
+   </div> </body>
+</html>
