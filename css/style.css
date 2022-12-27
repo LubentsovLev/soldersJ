@@ -2416,6 +2416,7 @@ body {
     border-radius: 20px;
     padding: 20px;
     position: relative;
+    overflow: hidden;
 }
 .gameColumns-items-title {
     font-weight: 600;
