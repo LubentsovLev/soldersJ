@@ -2310,6 +2310,31 @@ li.p-fre {
     background-size: cover;
     width: 450px;
     height: 570px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    color: #fff;
+}
+.game-main-right-ephoto-avrage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.game-main-right-photo-bottom {
+    display: flex;
+    align-items: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.game-main-right-photo-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .game-main-right-btn {
     cursor: pointer;
@@ -2527,7 +2552,7 @@ body {
     margin-right: 0;
 }
 @media (max-width: 992px) {
-    .game{
+    .game {
         margin-top: 0;
         padding-top: 40px;
         padding-bottom: 40px;
@@ -2594,13 +2619,13 @@ body {
     .game-main-left-wallet-text {
         font-size: 16px;
     }
-    .gameColumns-top-wallet-text{
+    .gameColumns-top-wallet-text {
         font-size: 16px;
     }
-    .gameColumns-top-balance-text{
+    .gameColumns-top-balance-text {
         font-size: 16px;
     }
-    .gameColumns-items-bottom-wallet-text{
+    .gameColumns-items-bottom-wallet-text {
         font-size: 16px;
     }
 }
